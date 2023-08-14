@@ -281,37 +281,41 @@
 
 .task46 {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(70px, 50px)
-  );
-  grid-template-rows: 10 1fr;
+  grid-template-columns: min-content max-content;
 }
 
 .task47 {
   display: grid;
+  grid-template-rows: min-content;
 }
 
 .task48 {
   display: grid;
-  place-content: auto;
+  grid-auto-flow: row;
 }
 
 .task50 {
   display: grid;
-  grid-template-columns: 1f 1fr 3fr 1fr 1fr 1fr;
+  grid-auto-flow: dense;
 }
 
 .task49 {
   display: grid;
+  grid-auto-flow: column;
 }
 
 .task51 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  );
 }
 
 .task52 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  );
 }
